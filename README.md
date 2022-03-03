@@ -1,6 +1,6 @@
 # typed_argument_parser
 
-An abstract base class that enables the `argparse.Namespace` returned by `ArgumentParser.parse_args` to use field and type information, which lets Python IDEs to be more helpful.
+An abstract base class that enables the `argparse.Namespace` returned by `ArgumentParser.parse_args` to use field and type information, which lets Python IDEs be more helpful.
 
 ## Usage
 
