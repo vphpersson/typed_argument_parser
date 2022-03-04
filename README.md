@@ -24,7 +24,7 @@ class PublicSuffixArgumentParser(TypedArgumentParser):
         json: bool
 ```
 
-Call `parse_args`, with the type of resulting namespace specified:
+Call `parse_args`, with the type of the resulting namespace specified:
 
 ```python
 args: Type[PublicSuffixArgumentParser.Namespace] = PublicSuffixArgumentParser().parse_args()
