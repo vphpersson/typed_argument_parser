@@ -39,4 +39,7 @@ class TypedArgumentParser(ABC, ArgumentParser):
         )
 
     def parse_args(self, *args, **kwargs) -> Type[ArgparseNamespace]:
-        return super().parse_args(*args, namespace=self.Namespace, **kwargs)
+        return super().parse_args(
+            *args,
+            **(dict(namespace=self.Namespace) | kwargs)
+        )
