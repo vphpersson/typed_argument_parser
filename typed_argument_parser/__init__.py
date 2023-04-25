@@ -38,8 +38,8 @@ class TypedArgumentParser(ABC, ArgumentParser):
             )
         )
 
-    def parse_args(self, *args, **kwargs) -> Type[ArgparseNamespace]:
+    def parse_args(self, *args, **kwargs) -> ArgparseNamespace:
         return super().parse_args(
             *args,
-            **(dict(namespace=self.Namespace) | kwargs)
+            **(dict(namespace=self.Namespace()) | kwargs)
         )
